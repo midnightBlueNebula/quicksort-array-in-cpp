@@ -14,7 +14,7 @@ int pivot_index(T *arr, int left, int right){
   int shift = left;
   
   for(int i=left+1; i <= right; ++i){
-    if(arr[left] > arr[i]){ // Sorting in ascending order. For descending order descending order switch to arr[left] < arr[i]
+    if(arr[left] > arr[i]){ // Sorting in ascending order. For sorting in descending order switch to arr[left] < arr[i]
       swap(arr, ++shift, i);
     }
   }
